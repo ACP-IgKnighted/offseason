@@ -38,6 +38,10 @@ public class drivetrain extends SubsystemBase {
         left_e = left_1.getEncoder();
         right_e = left_2.getEncoder();
 
+        left_e.setPositionConversionFactor(DrivetrainConstants.ticksToInches);
+        right_e.setPositionConversionFactor(DrivetrainConstants.ticksToInches);
+
+
         diffdrive = new DifferentialDrive(leftMotors, rightMotors);
     }
 

@@ -24,5 +24,9 @@ public final class Constants {
 
     public static final boolean leftMotorInverted = false;
     public static final boolean rightMotorInverted = true;
+
+    public static final double wheelDiameter = 6;
+    public static final double gearRatio = 8.68;
+    public static final double ticksToInches = (wheelDiameter * Math.PI)/gearRatio;
   }
 }
